@@ -24,7 +24,7 @@ class UserProfileManager(BaseUserManager):
         return user
 
 
-class UserProfile(AbstractBaseUser, PermissionsMixin):
+class UserProfile(AbstractBaseUser, PermissionsMixin ):
     """Class for Mapping User to Database"""
     email = models.EmailField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
